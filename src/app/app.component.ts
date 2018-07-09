@@ -6,36 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  notateObjects = [
-    {
-      title: 'Hello',
-      description: 'Lorem ipsum dolor',
-      price: 45.99
-    },
-    {
-      title: 'Hello',
-      description: 'Lorem ipsum dolor',
-      price: 45.99
-    },
-    {
-      title: 'Hello',
-      description: 'Lorem ipsum dolor',
-      price: 45.99
-    },
-    {
-      title: 'Hello',
-      description: 'Lorem ipsum dolor',
-      price: 45.99
-    },
-    {
-      title: 'Hello',
-      description: 'Lorem ipsum dolor',
-      price: 45.99
-    },
-    {
-      title: 'Hello',
-      description: 'Lorem ipsum dolor',
-      price: 45.99
-    }
-  ];
+
+  title = 'My proj';
+
+  inputModel = 'Test';
+
+  onTitleClick(event) {
+    console.log(event);
+  }
+
+  onInputChange(event) {
+    console.log(event);
+
+    this.inputModel = event.target.value;
+  }
 }
