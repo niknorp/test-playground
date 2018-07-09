@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<div class="container">
+  <div class="row" *ngFor="let item of notateObjects">
+    <div class="col">{{ item.title }}</div>
+    <div class="col">{{ item.description }}</div>
+    <div style="margin: 0 0 20px 0" class="col">{{ item.price }}</div>
+  </div>
+</div>
