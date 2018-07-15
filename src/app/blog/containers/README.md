@@ -1,4 +1,4 @@
-### Small notes
+# small notes
 
 Here you might place all your components folder that we name as smart. This type of component is aware of services, they know how to request data from server and they decide which information to give to their child components (dumb component).
 
