@@ -7,21 +7,23 @@
   ;
   grid-gap: 15px;
   grid-template-columns: 1fr 1 fr 1fr minmax(50px,1fr);
+  grid-template-rows: minmax(50px,1fr) 4fr 50px;
   text-align: center;
 }
 .wrapper>div {
   border:1px solid black;
+  border-radius: 5px;
+  background-color: gray;
 }
 .head {
   grid-area: head;
-
+  
 }
 .blog {
   grid-area: blog;
 }
 .sidebar {
   grid-area: sidebar;
-  
 }
 .footer {
   grid-area: footer;

@@ -1,5 +1,16 @@
-p {
+span {
+  display:inline-block;
   color:red;
-  background-color: grey;
-  border:2px dotted red;
 }
+.author {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+.date_of_start {
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+}
+  
