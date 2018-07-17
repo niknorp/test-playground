@@ -1,0 +1,13 @@
+{
+  "blog": {
+    "users": [{
+      "id": "u0000b",
+      "firstName": "Jhon",
+      "lastName": "Dou",
+      "email": "jhondou@email.com",
+      "password": "password",
+      "birth": "17.07.1997",
+      "blogRole": "admin"
+    }]
+  }
+}
