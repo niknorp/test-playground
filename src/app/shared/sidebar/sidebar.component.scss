@@ -10,8 +10,9 @@ p {
   display:block;
   height: 50px;
   width: 50px;
-  background-color: #fff;
+  background-color: rgb(7, 96, 17);
   border-radius: 50%;
+  border: 1px solid black;
   position: relative;
 }
 .menu-btn-linkList {
@@ -26,6 +27,7 @@ p {
   width: 20px;
   height: 2px;
   background-color: #222222;
+  box-shadow: 1px 1px 5px white;
 }
 .menu-btn span::before,
 .menu-btn span::after {
@@ -43,5 +45,12 @@ p {
 }
 .menu-btn:hover .menu-btn-linkList {
   display:flex;
+  position:relative;
+  left:-325px;
+  top:15px;
   width: 600;
+    a {
+      display:inline-block;
+      margin-right:8px;
+    }
 }

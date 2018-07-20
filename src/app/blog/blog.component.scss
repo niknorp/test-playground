@@ -7,9 +7,9 @@
   "blog blog blog sidebar"
   "footer footer footer footer"
   ;
-  grid-gap: 10px;
+  grid-gap: 5px;
   grid-template-columns: 1fr 1 fr 1fr minmax(50px,1fr);
-  grid-template-rows: minmax(50px,1fr) 4fr 50px;
+  grid-template-rows: minmax(50px,0.75fr) 4fr 50px;
   text-align: center;
   background-color: #fff;
 }
@@ -30,4 +30,5 @@
 }
 .footer {
   grid-area: footer;
+  background-image: url(N:\gitRepo\test-playground\src\img\68480405-matrix-wallpapers.png);
 }

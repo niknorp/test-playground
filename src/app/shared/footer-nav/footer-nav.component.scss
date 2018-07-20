@@ -1,16 +1,7 @@
 span {
-  display:inline-block;
-  color:red;
+  color:white;
+  text-shadow: 1px 1px 2px whitesmoke;
+  font-family: Book Antiqua;
+  font-size:25px;
+  letter-spacing: 5px;
 }
-.author {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-
-}
-.date_of_start {
-  text-decoration: underline;
-  font-weight: bold;
-  font-style: italic;
-}
-  
