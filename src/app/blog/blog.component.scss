@@ -1,23 +1,26 @@
 .wrapper {
+  margin:0;
+  background-color:black;
   display:grid;
   grid-template-areas:
   "head head head head"
   "blog blog blog sidebar"
   "footer footer footer footer"
   ;
-  grid-gap: 15px;
+  grid-gap: 10px;
   grid-template-columns: 1fr 1 fr 1fr minmax(50px,1fr);
   grid-template-rows: minmax(50px,1fr) 4fr 50px;
   text-align: center;
+  background-color: #fff;
 }
 .wrapper>div {
-  border:1px solid black;
+  border:1px solid white;
   border-radius: 5px;
   background-color: gray;
 }
 .head {
   grid-area: head;
-  
+  background-image: url(N:\gitRepo\test-playground\src\img\68480405-matrix-wallpapers.png);
 }
 .blog {
   grid-area: blog;
