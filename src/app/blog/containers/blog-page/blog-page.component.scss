@@ -4,8 +4,8 @@
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: repeat(2fr);
   position:relative;
-  top:20px;
-  height: 95%;
+  top:0px;
+  height: 100%;
 }
 .blog-item-grid__shortcut {
   border:1px solid white;
@@ -64,4 +64,31 @@ span {
 }
 .blog-item-wrapper:hover {
   opacity:1;
+  transition: 0.9s;
+}
+.backImg-1 {
+  height: 100%;
+  background-image: url(src/img/neo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.backImg-2 {
+  height: 100%;
+  background-image: url(src/img/morpheus.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+}
+.backImg-3 {
+  height: 100%;
+  background-image: url(src/img/neo2.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+}
+.backImg-4 {
+  height: 100%;
+  background-image: url(src/img/matrix-code-reality-lady-in-red.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
