@@ -1,5 +1,4 @@
 .wrapper {
-  margin:0;
   background-color:black;
   display:grid;
   grid-template-areas:
@@ -8,27 +7,29 @@
   "footer footer footer footer"
   ;
   grid-gap: 5px;
-  grid-template-columns: 1fr 1 fr 1fr minmax(50px,1fr);
-  grid-template-rows: minmax(50px,0.75fr) 4fr 50px;
+  grid-template-columns: 1fr 1fr 1fr 0.7fr;
+  grid-template-rows: 80px 600px 50px;
   text-align: center;
   background-color: #fff;
+  max-height: 100%;
 }
 .wrapper>div {
   border:1px solid white;
   border-radius: 5px;
-  background-color: gray;
 }
 .head {
   grid-area: head;
-  background-image: url(N:\gitRepo\test-playground\src\img\68480405-matrix-wallpapers.png);
+  background-image: url(N:\gitRepo\test-playground\src\img\68480405-matrix-wallpapers.jpg);
 }
 .blog {
   grid-area: blog;
+  background-color: #141212;
 }
 .sidebar {
   grid-area: sidebar;
+  background-color: #141212;
 }
 .footer {
   grid-area: footer;
-  background-image: url(N:\gitRepo\test-playground\src\img\68480405-matrix-wallpapers.png);
+  background-image: url(N:\gitRepo\test-playground\src\img\68480405-matrix-wallpapers.jpg);
 }

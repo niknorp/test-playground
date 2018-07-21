@@ -1,22 +1,36 @@
-p {
-  color:blue;
+h3 {
+  color:#008f00;
+  font-size: 25px;
+  text-shadow: 1px 0px 1px #fff;
+  text-decoration: underline;
 }
 .section {
-  display:flex;
+  display:block;
   justify-content: center;
   align-items: center;
+  a {
+    text-decoration: none;
+    color: #00b200;
+    text-shadow: 0px 1px 1px white;
+    font-size: 20px;
+  } 
+  a:hover {
+    color:#fff;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: underline;
+  }
 }
+
+
+//This part of code for screen which width less than 768px
 .menu-btn {
-  display:block;
+  display:none; //it's hidden menu, needed class=block
   height: 50px;
   width: 50px;
-  background-color: rgb(7, 96, 17);
+  background-color: #008f00;
   border-radius: 50%;
   border: 1px solid black;
   position: relative;
-}
-.menu-btn-linkList {
-  display:none;
 }
 .menu-btn span,
 .menu-btn span::before,
@@ -43,14 +57,39 @@ p {
   transform: rotate(270deg);
   transition: 1.5s;
 }
-.menu-btn:hover .menu-btn-linkList {
+.menu-btn-linkList { //list of links, will visible after hover of .menu-btn
   display:flex;
+  transition: 1s;
+  transform: scaleX(0) translateX(0%);
+  transform-origin: right center;
+  visibility:hidden;
   position:relative;
-  left:-325px;
-  top:15px;
-  width: 600;
-    a {
-      display:inline-block;
-      margin-right:8px;
-    }
+  left:-360px;
+  width: 325px;
+  height: 47px;
+  line-height: 50px;
+  background-color: #008f00;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: -25px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border:1px solid black;
+  border-right: 0px;
+  a {
+    display:inline-block;
+    margin-right:10px;
+    text-decoration: none;
+    color:black;
+    text-shadow: 1px 1px 1px #fff;
+  }
+  a:hover {
+    color:#fff;
+    text-shadow: 1px 1px 1px black;
+  }
+}
+.menu-btn:hover .menu-btn-linkList {
+  transform: scaleX(1) translateX(0%);
+  opacity: 1;
+  visibility: visible;
 }
