@@ -3,12 +3,14 @@
   display:grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: repeat(2fr);
+  grid-gap: 5px;
   position:relative;
   top:0px;
   height: 100%;
 }
 .blog-item-grid__shortcut {
   border:1px solid white;
+  border-radius: 5px;
 }
 .main {
   display: block;
@@ -84,7 +86,7 @@ span {
   background-image: url(src/img/neo2.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 100%;
+  background-size: 130%;
 }
 .backImg-4 {
   height: 100%;

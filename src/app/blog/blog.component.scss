@@ -10,11 +10,10 @@
   grid-template-columns: 1fr 1fr 1fr 0.7fr;
   grid-template-rows: 80px 3fr 50px;
   text-align: center;
-  background-color: #fff;
+  background-color: #141212;
   max-height: 100%;
 }
 .wrapper>div {
-  border:1px solid white;
   border-radius: 5px;
 }
 .head {
@@ -28,6 +27,12 @@
 .sidebar {
   grid-area: sidebar;
   background-color: #141212;
+  border:1px solid white;
+  opacity:0.5;
+}
+.sidebar:hover {
+  transition:0.9s;
+  opacity:1;
 }
 .footer {
   grid-area: footer;
