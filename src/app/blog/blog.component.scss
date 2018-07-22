@@ -19,6 +19,7 @@
 .head {
   grid-area: head;
   background-image: url(src\img\68480405-matrix-wallpapers.jpg);
+  background-position: -20px;
 }
 .blog {
   grid-area: blog;
@@ -37,16 +38,19 @@
 .footer {
   grid-area: footer;
   background-image: url(src\img\68480405-matrix-wallpapers.jpg);
+  background-position: -20px;
 }
 
 @media screen and (max-width:768px) {
   .wrapper {
     grid-template-areas:
-  "head head head"
-  "blog blog blog"
-  "footer footer footer"
+  "head"
+  "blog"
+  "footer";
+  grid-template-columns: 2fr;
   }
   .sidebar {
     border:0px;
+    width:1px;
   }
 }

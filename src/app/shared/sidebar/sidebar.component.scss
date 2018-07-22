@@ -98,6 +98,9 @@
 @media screen and (max-width:768px) {
   .menu-btn {
     display:block;
+    position:relative;
+    top:-715px;
+    right:60px;
   }
   .section {
     display: none;

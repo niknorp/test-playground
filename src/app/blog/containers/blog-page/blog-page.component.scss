@@ -99,7 +99,7 @@ span {
 @media screen and (max-width:1000px) {
   .blog-item-grid {
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: repeat(2fr);
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr ;
   }
   .minor-1 {
     grid-column: 1;
@@ -118,7 +118,9 @@ span {
     grid-row: 12/15;
   }
   .backImg-1 {
-    background-size: 90%;
-    background-position: 50% 0%;
+    display:none;
+  }
+  .main {
+    min-height: 330px;
   }
 }
