@@ -38,3 +38,15 @@
   grid-area: footer;
   background-image: url(src\img\68480405-matrix-wallpapers.jpg);
 }
+
+@media screen and (max-width:768px) {
+  .wrapper {
+    grid-template-areas:
+  "head head head"
+  "blog blog blog"
+  "footer footer footer"
+  }
+  .sidebar {
+    border:0px;
+  }
+}
