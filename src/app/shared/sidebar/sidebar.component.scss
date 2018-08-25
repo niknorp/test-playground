@@ -106,3 +106,26 @@
     display: none;
   }
 }
+@media screen and (max-width:576px) {
+  .menu-btn {
+    display:block;
+    position:relative;
+    top:-1485px;
+    right:55px;
+  }
+  .section {
+    display: none;
+  }
+  .menu-btn-linkList {
+    left:-207px;
+    width: 170px;
+    font-size: 10px;
+    a {
+      position: relative;
+      left: -20px;
+      margin-right:5px;
+    }
+    
+  }
+  
+}
