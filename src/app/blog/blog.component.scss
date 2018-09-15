@@ -12,9 +12,9 @@
   text-align: center;
   background-color: #141212;
   max-height: 100%;
-}
-.wrapper>div {
-  border-radius: 5px;
+  & > div {
+    border-radius: 5px;
+  }
 }
 .head {
   grid-area: head;
@@ -30,10 +30,10 @@
   background-color: #141212;
   border:1px solid white;
   opacity:0.8;
-}
-.sidebar:hover {
-  transition:0.9s;
-  opacity:1;
+  &:hover {
+    transition:0.9s;
+    opacity:1;
+  }
 }
 .footer {
   grid-area: footer;
