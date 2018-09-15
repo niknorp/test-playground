@@ -7,10 +7,10 @@
   position:relative;
   top:0px;
   height: 100%;
-}
-.blog-item-grid__shortcut {
-  border:1px solid white;
-  border-radius: 5px;
+  .shortcut {
+    border:1px solid white;
+    border-radius: 5px;
+  }
 }
 .main {
   display: block;
@@ -57,10 +57,10 @@ span {
     color:black;
     text-shadow: 1px 1px 1px black;
   }
-}
-.blog-item-wrapper:hover {
-  opacity:1;
-  transition: 0.9s;
+  &:hover {
+    opacity:1;
+    transition: 0.9s;
+  }
 }
 .backImg-1 {
   height: 210px;
@@ -75,7 +75,6 @@ span {
   background-position: 50% 50%;
   background-size: 50%;
 }
-
 .backImg-4 {
   height: 100%;
   background-image: url(src/img/matrix-code-reality-lady-in-red.jpg);
@@ -83,7 +82,6 @@ span {
   background-size: 100%;
 }
 //responsibility
-
 @media screen and (max-width:1000px) {
   .blog-item-grid {
     grid-template-columns: 2fr 2fr;
