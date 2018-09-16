@@ -48,6 +48,37 @@ span {
   font-weight: bold;
   text-decoration: underline;
 }
+.secondary-1 {
+  .blog-item-wrapper{
+    display:grid;
+    grid-template-columns: 30px 1fr 10px;
+    grid-template-areas: 
+    "left-btn img right-btn"
+    ;
+    grid-gap:5px;
+  }
+  .button {
+    border: 1px solid white;
+    border-radius:3px;
+    width: 15px;
+    height: 45px; 
+    position: relative;
+    top:125px;
+    background-color: black;
+    cursor: pointer;
+    & .left-button{
+      display:block;
+      grid-area: left-btn;
+    }
+    & .right-button{
+      display:block;
+      grid-area: right-btn;
+      position:relative;
+      left:-10px!important;
+    }
+  }
+  
+}
 .blog-item-wrapper{
   height: 100%;
   padding:1px;
@@ -69,6 +100,7 @@ span {
   background-size: 100%;
 }
 .backImg-2 {
+  grid-area: img;
   height: 100%;
   background-image: url(src/img/morpheus.jpg);
   background-repeat: no-repeat;
