@@ -1,0 +1,14 @@
+.head {
+  color:white;
+  text-shadow: 2px 2px 1px black;
+  font-family: Book Antiqua;
+  font-size:45px;
+  letter-spacing: 5px;
+  padding-top:15px;
+
+}
+@media screen and (max-width:576px) {
+  .head {
+    font-size:35px;
+  }
+}
