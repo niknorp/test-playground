@@ -1,184 +1,219 @@
 //Blog-page Grid setup
 .blog-item-grid {
-  display:grid;
+  display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: repeat(2fr);
   grid-gap: 5px;
-  position:relative;
-  top:0px;
+  position: relative;
+  top: 0px;
   height: 100%;
+
   .shortcut {
-    border:1px solid white;
+    border: 1px solid white;
     border-radius: 5px;
   }
 }
+
 .main {
   display: block;
-  border:1px solid white;
+  border: 1px solid white;
   grid-column: 1;
   grid-row: 1/9;
 }
+
 .secondary-1 {
   display: block;
   border: 1px solid white;
-  grid-column:2/4;
+  grid-column: 2/4;
   grid-row: 1/5;
 }
+
 .minor-1 {
   grid-column: 2;
   grid-row: 5/7;
 }
+
 .minor-2 {
   grid-column: 2;
   grid-row: 7/9;
 }
+
 .minor-3 {
   grid-column: 3;
   grid-row: 5/7;
 }
+
 .minor-4 {
   grid-column: 3;
   grid-row: 7/9;
 }
+
 //Elements properties
 p {
   color: black;
 }
+
 span {
   font-weight: bold;
   text-decoration: underline;
 }
+
 .secondary-1 {
-  .blog-item-wrapper{
-    display:grid;
+  .blog-item-wrapper {
+    display: grid;
     grid-template-columns: 30px 1fr 10px;
-    grid-template-areas: 
-    "left-btn img right-btn"
+    grid-template-areas:
+      "left-btn img right-btn"
     ;
-    grid-gap:5px;
+    grid-gap: 5px;
   }
+
   .button {
     border: 1px solid white;
-    border-radius:3px;
+    border-radius: 3px;
     width: 15px;
-    height: 45px; 
+    height: 45px;
     position: relative;
-    top:125px;
+    top: 125px;
     background-color: black;
     cursor: pointer;
-    & .left-button{
-      display:block;
+
+    & .left-button {
+      display: block;
       grid-area: left-btn;
     }
-    & .right-button{
-      display:block;
+
+    & .right-button {
+      display: block;
       grid-area: right-btn;
-      position:relative;
-      left:-10px!important;
+      position: relative;
+      left: -10px !important;
     }
   }
-  
+
 }
-.blog-item-wrapper{
+
+.blog-item-wrapper {
   height: 100%;
-  padding:1px;
+  padding: 1px;
   background-color: #1B5E20;
   opacity: 0.5;
-  h2, a {
-    color:black;
+
+  h2,
+  a {
+    color: black;
     text-shadow: 1px 1px 1px black;
   }
+
   &:hover {
-    opacity:1;
+    opacity: 1;
     transition: 0.9s;
   }
 }
+
 .backImg-1 {
   height: 210px;
-  background-image: url(src/img/neo.jpg);
+  background-image: url("../../../../assets/img/neo.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
 .backImg-2 {
   grid-area: img;
   height: 100%;
-  background-image: url(src/img/morpheus.jpg);
+  background-image: url("../../../../assets/img/morpheus.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 50%;
 }
+
 .backImg-4 {
   height: 100%;
-  background-image: url(src/img/matrix-code-reality-lady-in-red.jpg);
+  background-image: url("../../../../assets/img/matrix-code-reality-lady-in-red.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
 //responsibility
 @media screen and (max-width:922px) {
   .blog-item-grid {
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
   }
+
   .secondary-1 {
     display: block;
     border: 1px solid white;
-    grid-column:2/4;
+    grid-column: 2/4;
     grid-row: 1/9;
   }
+
   .minor-1 {
     grid-column: 1;
     grid-row: 9/12;
   }
+
   .minor-2 {
     grid-column: 1;
     grid-row: 12/15;
   }
+
   .minor-3 {
     grid-column: 2;
     grid-row: 9/12;
   }
+
   .minor-4 {
     grid-column: 2;
     grid-row: 12/15;
   }
+
   .backImg-1 {
-    display:none;
+    display: none;
   }
+
   .main {
     min-height: 330px;
   }
 }
+
 @media screen and (max-width:576px) {
   .blog-item-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 2fr 1fr 1fr 1fr 1fr;
   }
+
   .main {
     display: block;
-    border:1px solid white;
+    border: 1px solid white;
     grid-column: 1;
     grid-row: 1;
   }
+
   .secondary-1 {
     display: block;
     border: 1px solid white;
-    grid-column:1;
+    grid-column: 1;
     grid-row: 2;
   }
+
   .minor-1 {
     grid-column: 1;
     grid-row: 3;
   }
+
   .minor-2 {
-    grid-column:1;
+    grid-column: 1;
     grid-row: 4;
   }
+
   .minor-3 {
     grid-column: 1;
     grid-row: 5;
   }
+
   .minor-4 {
-    grid-column:1;
+    grid-column: 1;
     grid-row: 6;
   }
 }
